@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Quinn\\Downloads\\Programacion legit\\A repos con permisos\\Progra 3\\TP_temp\\TP5_Grupo_8\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Quinn\\Downloads\\Programacion legit\\A repos con permisos\\Progra 3\\TP-grupal-5\\UTN-Prog3-TP5-Webforms\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B81A652A-2874-4B7F-82F2-C0AF074FC52A}|TP5_Grupo_8\\TP5_Grupo_8.csproj|c:\\users\\quinn\\downloads\\programacion legit\\a repos con permisos\\progra 3\\tp-grupal-5\\utn-prog3-tp5-webforms\\tp5_grupo_8\\agregarsucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{B81A652A-2874-4B7F-82F2-C0AF074FC52A}|TP5_Grupo_8\\TP5_Grupo_8.csproj|solutionrelative:tp5_grupo_8\\agregarsucursal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +31,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AgregarSucursal.aspx",
+              "DocumentMoniker": "C:\\Users\\Quinn\\Downloads\\Programacion legit\\A repos con permisos\\Progra 3\\TP-grupal-5\\UTN-Prog3-TP5-Webforms\\TP5_Grupo_8\\AgregarSucursal.aspx",
+              "RelativeDocumentMoniker": "TP5_Grupo_8\\AgregarSucursal.aspx",
+              "ToolTip": "C:\\Users\\Quinn\\Downloads\\Programacion legit\\A repos con permisos\\Progra 3\\TP-grupal-5\\UTN-Prog3-TP5-Webforms\\TP5_Grupo_8\\AgregarSucursal.aspx*",
+              "RelativeToolTip": "TP5_Grupo_8\\AgregarSucursal.aspx*",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-29T22:45:26.982Z",
+              "EditorCaption": ""
             }
           ]
         }
