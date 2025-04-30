@@ -17,5 +17,10 @@ namespace TP5_Grupo_8
 		{
 	
 		}
-	}
+
+        protected void btnAceptar_Click(object sender, EventArgs e)
+        {
+			//agregar codigo
+        }
+    }
 }

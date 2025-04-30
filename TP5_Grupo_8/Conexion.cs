@@ -13,6 +13,12 @@ namespace TP5_Grupo_8
         public int EjecutarTransaccion(string consultaSQL)
         {
 
+            SqlConnection sqlConexion = new SqlConnection(cadenaConexion);
+            sqlConexion.Open();
+
+            //ingresar codigo
+
+            sqlConexion.Close();
             return filasAfectadas;
         }
 
