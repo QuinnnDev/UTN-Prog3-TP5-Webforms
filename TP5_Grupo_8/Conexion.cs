@@ -25,6 +25,20 @@ namespace TP5_Grupo_8
             return filasAfectadas;
         }
 
+        public int EjecutarConsulta(string consultaSQL) 
+        {
+            int resultado;
+
+            SqlConnection sqlConexion = new SqlConnection(cadenaConexion);
+            SqlCommand sqlCommand = new SqlCommand(consultaSQL, sqlConexion);
+            sqlConexion.Open();
+
+            resultado = sqlCommand.ExecuteNonQuery();
+
+            sqlConexion.Close();
+
+            return resultado;
+        }
     }
 }
 
