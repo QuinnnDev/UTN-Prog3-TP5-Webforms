@@ -19,7 +19,7 @@ namespace TP5_Grupo_8
             SqlCommand SqlCommand = new SqlCommand (consultaSQL, sqlConexion);
             sqlConexion.Open();
 
-            //ingresar codigo
+            filasAfectadas = SqlCommand.ExecuteNonQuery();
 
             sqlConexion.Close();
             return filasAfectadas;
