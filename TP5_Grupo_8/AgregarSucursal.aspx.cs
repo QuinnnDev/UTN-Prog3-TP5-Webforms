@@ -36,6 +36,11 @@ namespace TP5_Grupo_8
               "VALUES ('" + txtNombreSucursal.Text + "','" + txtDescripcion.Text + "'," + ddlProvincia.SelectedValue + ",'" + txtDireccion.Text + "')";
 
                 filasAfectadas = conexion.EjecutarTransaccion(consultaSQL);
+				//Si la sucursal fue cargada correctamente, se muestra el mensaje y limpia el resto de campos
+				mensajeError.Text = "Sucursal agregada correctamente!";
+				txtNombreSucursal.Text = String.Empty;
+				txtDescripcion.Text = String.Empty;
+				txtDireccion.Text = String.Empty;
             }
             else { mensajeError.Text = "Hubo un error al intentar agregar la sucursal"; }
 
