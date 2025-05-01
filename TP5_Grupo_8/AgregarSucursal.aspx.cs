@@ -15,7 +15,14 @@ namespace TP5_Grupo_8
 		private Conexion conexion = new Conexion();
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
+			if (!IsPostBack)
+			{
+				consultaSQL = "SELECT Id_Provincia, DescripcionProvincia FROM Provincia";
+				ddlProvincia.DataSource = conexion.EjecutarConsulta(consultaSQL);
+				ddlProvincia.DataTextField = "DescripcionProvincia";
+				ddlProvincia.DataValueField = "Id_Provincia";
+				ddlProvincia.DataBind();
+			}
 		}
 
         protected void btnAceptar_Click(object sender, EventArgs e)
