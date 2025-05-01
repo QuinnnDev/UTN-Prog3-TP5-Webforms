@@ -142,7 +142,7 @@
                     <td class="auto-style8">
                         <asp:Label ID="lblSubtitulo" runat="server" Font-Size="20pt" Text="Agregar Sucursal"></asp:Label>
                     </td>
-                    <td class="auto-style17"></td>
+                    <td class="auto-style17">&nbsp;</td>
                     <td class="auto-style9"></td>
                     <td class="auto-style9"></td>
                     <td class="auto-style9"></td>
@@ -236,7 +236,9 @@
                     <td class="auto-style5">
                         <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Label ID="mensajeError" runat="server"></asp:Label>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style12">&nbsp;</td>
