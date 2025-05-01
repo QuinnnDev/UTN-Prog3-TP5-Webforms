@@ -32,10 +32,13 @@ namespace TP5_Grupo_8
 
 			if (txtNombreSucursal.Text != "" && txtDescripcion.Text != "" && txtDireccion.Text != "" && ddlProvincia.SelectedValue != "")
 			{
-				string consultaSQL = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) VALUES (" + txtNombreSucursal.Text + ","+ txtDescripcion.Text + "," + txtDireccion.Text + "," + ddlProvincia.SelectedValue + ",";
-			}
+				string consultaSQL = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
+              "VALUES ('" + txtNombreSucursal.Text + "','" + txtDescripcion.Text + "'," + ddlProvincia.SelectedValue + ",'" + txtDireccion.Text + "')";
+
+                filasAfectadas = conexion.EjecutarTransaccion(consultaSQL);
+            }
             else { mensajeError.Text = "Hubo un error al intentar agregar la sucursal"; }
-			//agregar codigo
-		}
+
+        }
     }
 }
