@@ -27,22 +27,15 @@ namespace TP5_Grupo_8
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
+			string consultaSQL = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
+            "VALUES ('" + txtNombreSucursal.Text + "','" + txtDescripcion.Text + "'," + ddlProvincia.SelectedValue + ",'" + txtDireccion.Text + "')";
 
-			//VALIDACION DESHECHABLE 
-
-			if (txtNombreSucursal.Text != "" && txtDescripcion.Text != "" && txtDireccion.Text != "" && ddlProvincia.SelectedValue != "")
-			{
-				string consultaSQL = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
-              "VALUES ('" + txtNombreSucursal.Text + "','" + txtDescripcion.Text + "'," + ddlProvincia.SelectedValue + ",'" + txtDireccion.Text + "')";
-
-                filasAfectadas = conexion.EjecutarTransaccion(consultaSQL);
-				//Si la sucursal fue cargada correctamente, se muestra el mensaje y limpia el resto de campos
-				txtNombreSucursal.Text = String.Empty;
-				txtDescripcion.Text = String.Empty;
-				txtDireccion.Text = String.Empty;
-            }
-            else { mensajeError.Text = "Hubo un error al intentar agregar la sucursal"; }
-
+            filasAfectadas = conexion.EjecutarTransaccion(consultaSQL);
+			//Si la sucursal fue cargada correctamente, se muestra el mensaje y limpia el resto de campos
+			mensajeError.Text = "Sucursal agregada correctamente!";
+			txtNombreSucursal.Text = String.Empty;
+			txtDescripcion.Text = String.Empty;
+			txtDireccion.Text = String.Empty;
         }
     }
 }

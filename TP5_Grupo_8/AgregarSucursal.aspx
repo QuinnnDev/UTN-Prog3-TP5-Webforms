@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <style type="text/css">
@@ -82,6 +83,29 @@
         .auto-style30 {
             width: 134px;
         }
+        .auto-style31 {
+            width: 39px;
+            height: 30px;
+        }
+        .auto-style32 {
+            width: 151px;
+            height: 30px;
+        }
+        .auto-style33 {
+            width: 325px;
+            height: 30px;
+        }
+        .auto-style34 {
+            height: 30px;
+        }
+        .auto-style35 {
+            width: 137px;
+            height: 30px;
+        }
+        .auto-style36 {
+            width: 125px;
+            height: 30px;
+        }
     </style>
 </head>
 <body>
@@ -154,14 +178,14 @@
             </p>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td class="auto-style12">&nbsp;</td>
-                    <td class="auto-style15">&nbsp;</td>
+                    <td class="auto-style3"></td>
+                    <td class="auto-style11"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style14"></td>
+                    <td class="auto-style16"></td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
@@ -171,7 +195,9 @@
                     <td class="auto-style5">
                         <asp:TextBox ID="txtNombreSucursal" runat="server" Width="253px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal" ErrorMessage="Se requiere nombre de sucursal">*</asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style12">&nbsp;</td>
@@ -185,7 +211,9 @@
                     <td class="auto-style6">
                         <asp:TextBox ID="txtDescripcion" runat="server" Width="253px"></asp:TextBox>
                     </td>
-                    <td class="auto-style4"></td>
+                    <td class="auto-style4">
+                        <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDescripcion" ErrorMessage="Se requiere descripción">*</asp:RequiredFieldValidator>
+                    </td>
                     <td class="auto-style4"></td>
                     <td class="auto-style4"></td>
                     <td class="auto-style14"></td>
@@ -200,7 +228,9 @@
                         <asp:DropDownList ID="ddlProvincia" runat="server" Height="16px" Width="253px">
                         </asp:DropDownList>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia" ErrorMessage="Requiere provincia">*</asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style12">&nbsp;</td>
@@ -214,17 +244,9 @@
                     <td class="auto-style5">
                         <asp:TextBox ID="txtDireccion" runat="server" Width="253px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td class="auto-style12">&nbsp;</td>
-                    <td class="auto-style15">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDireccion" ErrorMessage="Requiere dirección">*</asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style12">&nbsp;</td>
@@ -234,15 +256,33 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style10">&nbsp;</td>
                     <td class="auto-style5">
-                        <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" />
+                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
                     </td>
-                    <td>
-                        <asp:Label ID="mensajeError" runat="server"></asp:Label>
-                    </td>
+                    <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style12">&nbsp;</td>
                     <td class="auto-style15">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style31"></td>
+                    <td class="auto-style32"></td>
+                    <td class="auto-style33">
+                        <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" />
+                    </td>
+                     <td>
+     <asp:Label ID="mensajeError" runat="server"></asp:Label>
+ </td>
+ <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style15">&nbsp;</td>
+                    <td class="auto-style34">
+                        &nbsp;</td>
+                    <td class="auto-style34"></td>
+                    <td class="auto-style34"></td>
+                    <td class="auto-style35"></td>
+                    <td class="auto-style36"></td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
