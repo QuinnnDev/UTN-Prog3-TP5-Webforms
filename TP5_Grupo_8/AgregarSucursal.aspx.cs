@@ -37,7 +37,6 @@ namespace TP5_Grupo_8
 
                 filasAfectadas = conexion.EjecutarTransaccion(consultaSQL);
 				//Si la sucursal fue cargada correctamente, se muestra el mensaje y limpia el resto de campos
-				mensajeError.Text = "Sucursal agregada correctamente!";
 				txtNombreSucursal.Text = String.Empty;
 				txtDescripcion.Text = String.Empty;
 				txtDireccion.Text = String.Empty;
