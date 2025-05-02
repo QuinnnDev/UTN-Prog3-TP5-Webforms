@@ -6,10 +6,99 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 260px;
+        }
+        .auto-style3 {
+            width: 52px;
+        }
+        .auto-style4 {
+            width: 124px;
+        }
+        .auto-style5 {
+            width: 402px;
+        }
+        .auto-style6 {
+            width: 401px;
+        }
+        .auto-style7 {
+            width: 403px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:HyperLink ID="hplAgregarSucursal" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
+                    </td>
+                    <td class="auto-style6">
+                        <asp:HyperLink ID="hplListadoSucursales" runat="server">Listado de Sucursales</asp:HyperLink>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:HyperLink ID="hplEliminarSucursal" runat="server">Eliminar Sucursal</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                </tr>
+            </table>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:Label ID="lblTitulo" runat="server" Font-Size="20pt" Text="Listado de Sucursales"></asp:Label>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:Label ID="lblIdSucursal" runat="server" Text="Busqueda ingrese Id Sucursal: "></asp:Label>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
         </div>
     </form>
 </body>
