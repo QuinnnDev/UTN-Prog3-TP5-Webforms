@@ -128,7 +128,9 @@
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style11">&nbsp;</td>
+                    <td class="auto-style11">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtIdSucursal" ErrorMessage="No puede ingresar numeros negativos." ForeColor="Red" ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
+                    </td>
                     <td class="auto-style13">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
