@@ -53,6 +53,14 @@
             height: 23px;
             width: 255px;
         }
+        .auto-style13 {
+            width: 276px;
+        }
+        .auto-style14 {
+            height: 23px;
+            margin-left: 40px;
+            width: 276px;
+        }
     </style>
 </head>
 <body>
@@ -81,7 +89,7 @@
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style11">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -90,14 +98,14 @@
                         <asp:Label ID="lblTitulo" runat="server" Font-Size="20pt" Text="Listado de Sucursales"></asp:Label>
                     </td>
                     <td class="auto-style11">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style8"></td>
                     <td class="auto-style9"></td>
                     <td class="auto-style12"></td>
-                    <td class="auto-style10"></td>
+                    <td class="auto-style14"></td>
                     <td class="auto-style10"></td>
                 </tr>
                 <tr>
@@ -108,18 +116,20 @@
                     <td class="auto-style12">
                         <asp:TextBox ID="txtIdSucursal" runat="server" Width="199px"></asp:TextBox>
                     </td>
-                    <td class="auto-style10">
-                        <asp:Button ID="btnFiltrar" runat="server" OnClick="Button1_Click" Text="Filtrar" />
+                    <td class="auto-style14">
+                        <asp:Button ID="btnFiltrar" runat="server" OnClick="filtrar_Click" Text="Filtrar" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar Todos" />
+                        <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar Todos" OnClick="mostrarTodo" />
                     </td>
-                    <td class="auto-style10"></td>
+                    <td class="auto-style10">
+                        <asp:Label ID="msjError" runat="server" ForeColor="Red"></asp:Label>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style11">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -130,7 +140,7 @@
                         <asp:GridView ID="gvSucursales" runat="server">
                         </asp:GridView>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
             </table>
