@@ -114,7 +114,7 @@
                         <asp:Label ID="lblIdSucursal" runat="server" Text="Busqueda ingrese Id Sucursal: "></asp:Label>
                     </td>
                     <td class="auto-style12">
-                        <asp:TextBox ID="txtIdSucursal" runat="server" Width="199px"></asp:TextBox>
+                        <asp:TextBox ID="txtIdSucursal" runat="server" Width="199px" TextMode="Number"></asp:TextBox>
                     </td>
                     <td class="auto-style14">
                         <asp:Button ID="btnFiltrar" runat="server" OnClick="filtrar_Click" Text="Filtrar" />
