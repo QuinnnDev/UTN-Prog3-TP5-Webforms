@@ -9,9 +9,16 @@ namespace TP5_Grupo_8
 {
     public partial class ListadoDeSucursales : System.Web.UI.Page
     {
+        string ConsultaSQL;
+        private Conexion conexion = new Conexion();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+               ConsultaSQL = "SELECT * FROM Sucursal";
+               gvSucursales.DataSource = conexion.EjecutarConsulta(ConsultaSQL);
+               gvSucursales.DataBind();
+            }
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)

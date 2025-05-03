@@ -127,7 +127,7 @@
                     <td class="auto-style2">
                         &nbsp;</td>
                     <td class="auto-style11">
-                        <asp:GridView ID="GridView1" runat="server">
+                        <asp:GridView ID="gvSucursales" runat="server">
                         </asp:GridView>
                     </td>
                     <td>&nbsp;</td>
