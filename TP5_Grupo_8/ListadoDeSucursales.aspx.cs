@@ -15,9 +15,7 @@ namespace TP5_Grupo_8
         {
             if (!IsPostBack)
             {
-               ConsultaSQL = "SELECT * FROM Sucursal";
-               gvSucursales.DataSource = conexion.EjecutarConsulta(ConsultaSQL);
-               gvSucursales.DataBind();
+               mostrarTodo(sender, e);
             }
         }
 
@@ -50,7 +48,7 @@ namespace TP5_Grupo_8
 
         protected void mostrarTodo(object sender, EventArgs e)
         {
-            string ConsultaSQL = "SELECT * FROM Sucursal";
+            ConsultaSQL = "SELECT * FROM Sucursal";
             gvSucursales.DataSource = conexion.EjecutarConsulta(ConsultaSQL);
             gvSucursales.DataBind();
         }
