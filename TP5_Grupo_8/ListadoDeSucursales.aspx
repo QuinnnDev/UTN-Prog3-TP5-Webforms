@@ -28,6 +28,31 @@
         .auto-style7 {
             width: 403px;
         }
+        .auto-style8 {
+            width: 52px;
+            height: 23px;
+        }
+        .auto-style9 {
+            width: 260px;
+            height: 23px;
+        }
+        .auto-style10 {
+            height: 23px;
+            margin-left: 40px;
+        }
+        #Text1 {
+            width: 309px;
+        }
+        #idSucursal {
+            width: 195px;
+        }
+        .auto-style11 {
+            width: 255px;
+        }
+        .auto-style12 {
+            height: 23px;
+            width: 255px;
+        }
     </style>
 </head>
 <body>
@@ -55,7 +80,7 @@
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style11">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -64,37 +89,47 @@
                     <td class="auto-style2">
                         <asp:Label ID="lblTitulo" runat="server" Font-Size="20pt" Text="Listado de Sucursales"></asp:Label>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style11">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style12"></td>
+                    <td class="auto-style10"></td>
+                    <td class="auto-style10"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style9">
+                        <asp:Label ID="lblIdSucursal" runat="server" Text="Busqueda ingrese Id Sucursal: "></asp:Label>
+                    </td>
+                    <td class="auto-style12">
+                        <asp:TextBox ID="txtIdSucursal" runat="server" Width="199px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style10">
+                        <asp:Button ID="btnFiltrar" runat="server" OnClick="Button1_Click" Text="Filtrar" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar Todos" />
+                    </td>
+                    <td class="auto-style10"></td>
+                </tr>
+                <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style11">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">
-                        <asp:Label ID="lblIdSucursal" runat="server" Text="Busqueda ingrese Id Sucursal: "></asp:Label>
+                        &nbsp;</td>
+                    <td class="auto-style11">
+                        <asp:GridView ID="GridView1" runat="server">
+                        </asp:GridView>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
