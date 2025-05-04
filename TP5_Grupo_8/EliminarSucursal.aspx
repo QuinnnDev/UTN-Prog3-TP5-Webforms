@@ -13,6 +13,9 @@
         .auto-style2 {
             width: 106px;
         }
+        .auto-style3 {
+            width: 491px;
+        }
     </style>
 </head>
 <body>
@@ -24,10 +27,12 @@
                         <table class="auto-style1">
                             <tr>
                                 <td>&nbsp;</td>
-                                <td>
+                                <td class="auto-style3">
                                     <asp:HyperLink ID="hplAgregarSucursal" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                                 </td>
-                                <td>&nbsp;</td>
+                                <td>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ListadoDeSucursales.aspx">Listado de Sucursales</asp:HyperLink>
+                                </td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                             </tr>
