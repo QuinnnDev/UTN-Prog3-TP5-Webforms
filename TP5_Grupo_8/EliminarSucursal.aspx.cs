@@ -12,6 +12,13 @@ namespace TP5_Grupo_8
 		protected void Page_Load(object sender, EventArgs e)
 		{
 
+			
+
 		}
-	}
+
+        protected void eliminarSucursal(object sender, EventArgs e)
+		{ 
+			TxtSucursal.Text = string.Empty;
+		}
+    }
 }

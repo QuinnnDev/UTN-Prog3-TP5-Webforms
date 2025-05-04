@@ -77,7 +77,7 @@
                         <asp:TextBox ID="TxtSucursal" runat="server" TextMode="Number" Width="209px"></asp:TextBox>
                     </td>
                     <td class="auto-style9">
-                        <asp:Button ID="Button1" runat="server" Text="Eliminar " />
+                        <asp:Button ID="btnEliminar" runat="server" Text="Eliminar " OnClick="eliminarSucursal" />
                     </td>
                     <td>
                         <asp:RegularExpressionValidator ID="revSucursal" runat="server" ControlToValidate="TxtSucursal" ErrorMessage="no se permiten numeros negativos o no enteros" ValidationExpression="^\d{1,}$"></asp:RegularExpressionValidator>
