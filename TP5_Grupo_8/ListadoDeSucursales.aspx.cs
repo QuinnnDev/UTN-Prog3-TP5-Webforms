@@ -39,8 +39,11 @@ namespace TP5_Grupo_8
                 ConsultaSQL += txtIdSucursal.Text + "'"; 
                 gvSucursales.DataSource = conexion.EjecutarConsulta(ConsultaSQL);
                 gvSucursales.DataBind();
+                msjError.Text = string.Empty;
             }
             else { msjError.Text = "Debe ingresar un id"; }
+
+
 
             txtIdSucursal.Text = string.Empty;
 
@@ -51,6 +54,7 @@ namespace TP5_Grupo_8
             ConsultaSQL = "SELECT * FROM Sucursal";
             gvSucursales.DataSource = conexion.EjecutarConsulta(ConsultaSQL);
             gvSucursales.DataBind();
+            txtIdSucursal.Text = string.Empty;
         }
     }
 }
