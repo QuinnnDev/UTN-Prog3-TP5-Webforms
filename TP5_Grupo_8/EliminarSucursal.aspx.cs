@@ -9,16 +9,25 @@ namespace TP5_Grupo_8
 {
 	public partial class EliminarSucursal : System.Web.UI.Page
 	{
-		protected void Page_Load(object sender, EventArgs e)
+
+		private string consultaSql;
+        private int filasAfectadas;
+        private Conexion conexion = new Conexion();
+        protected void Page_Load(object sender, EventArgs e)
 		{
 
 			
 
 		}
 
-        protected void eliminarSucursal(object sender, EventArgs e)
-		{ 
-			TxtSucursal.Text = string.Empty;
+		protected void eliminarSucursal(object sender, EventArgs e)
+		{
+			consultaSql = "DELETE FROM Sucursal WHERE Id_Sucursal = " + TxtSucursal.Text;
+
+			filasAfectadas = conexion.EjecutarTransaccion(consultaSql);
+
+
+            TxtSucursal.Text = string.Empty;
 		}
     }
 }
