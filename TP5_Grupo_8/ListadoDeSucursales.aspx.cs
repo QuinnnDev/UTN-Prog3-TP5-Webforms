@@ -31,21 +31,25 @@ namespace TP5_Grupo_8
 
         protected void filtrar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtIdSucursal.Text))
+            {
+                msjError.Text = "Debe ingresar un id";
+                return;
+            }
             string ConsultaSQL = "SELECT * FROM Sucursal WHERE Id_Sucursal = '";
 
-            if (!string.IsNullOrEmpty(txtIdSucursal.Text)) 
+            ConsultaSQL += txtIdSucursal.Text + "'";
+            gvSucursales.DataSource = conexion.EjecutarConsulta(ConsultaSQL);
+            gvSucursales.DataBind();
+            msjError.Text = string.Empty;
+
+            if (gvSucursales.Rows.Count == 0)
             {
-
-                ConsultaSQL += txtIdSucursal.Text + "'"; 
-                gvSucursales.DataSource = conexion.EjecutarConsulta(ConsultaSQL);
-                gvSucursales.DataBind();
-                msjError.Text = string.Empty;
+                msjError.Text = "No se encontraron resultados";
             }
-            else { msjError.Text = "Debe ingresar un id"; }
-
-
-
+               
             txtIdSucursal.Text = string.Empty;
+
 
         }
 
