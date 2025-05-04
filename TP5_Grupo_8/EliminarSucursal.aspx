@@ -10,14 +10,20 @@
         .auto-style1 {
             width: 100%;
         }
-        .auto-style2 {
-            width: 106px;
-        }
         .auto-style3 {
-            width: 491px;
+            width: 300px;
         }
         .auto-style4 {
             width: 371px;
+        }
+        .auto-style5 {
+            width: 148px;
+        }
+        .auto-style6 {
+            width: 248px;
+        }
+        .auto-style7 {
+            width: 622px;
         }
     </style>
 </head>
@@ -45,7 +51,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style7">
+                        <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" Text="Eliminar Sucursal "></asp:Label>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -54,8 +62,23 @@
             <br />
             <table class="auto-style1">
                 <tr>
+                    <td class="auto-style5">
+                        <asp:Label ID="Label2" runat="server" Font-Size="Large" Text="Ingrese ID sucursal:"></asp:Label>
+                    </td>
+                    <td class="auto-style6">
+                        <asp:TextBox ID="TxtSucursal" runat="server" TextMode="Number" Width="209px"></asp:TextBox>
+                    </td>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="Eliminar " />
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -63,17 +86,10 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:Label ID="msjValidacion" runat="server" ForeColor="Red"></asp:Label>
+                    </td>
+                    <td class="auto-style6">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -81,17 +97,8 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -99,8 +106,8 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -108,8 +115,17 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -119,5 +135,7 @@
             </table>
         </div>
     </form>
+    <p>
+        &nbsp;</p>
 </body>
 </html>
