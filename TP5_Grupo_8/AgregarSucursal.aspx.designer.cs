@@ -42,13 +42,13 @@ namespace TP5_Grupo_8
         protected global::System.Web.UI.WebControls.HyperLink hplListadoSucursales;
 
         /// <summary>
-        /// Control hplEliminarSucursal.
+        /// Control HyperLink2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hplEliminarSucursal;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
 
         /// <summary>
         /// Control lblTitulo.

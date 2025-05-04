@@ -73,15 +73,19 @@
         }
         .auto-style27 {
             width: 598px;
+            height: 26px;
         }
         .auto-style28 {
             width: 247px;
+            height: 26px;
         }
         .auto-style29 {
             width: 205px;
+            height: 26px;
         }
         .auto-style30 {
             width: 134px;
+            height: 26px;
         }
         .auto-style31 {
             width: 39px;
@@ -106,6 +110,10 @@
             width: 125px;
             height: 30px;
         }
+        .auto-style37 {
+            width: 125px;
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -113,7 +121,7 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style30">&nbsp;</td>
+                    <td class="auto-style30"></td>
                     <td class="auto-style29">
                         <asp:HyperLink ID="hplAgregarSucursal" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                     </td>
@@ -121,9 +129,9 @@
                         <asp:HyperLink ID="hplListadoSucursales" runat="server" NavigateUrl="~/ListadoDeSucursales.aspx">Listado de Sucursales</asp:HyperLink>
                     </td>
                     <td class="auto-style27">
-                        <asp:HyperLink ID="hplEliminarSucursal" runat="server">Eliminar Sucursales</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
                     </td>
-                    <td class="auto-style15">&nbsp;</td>
+                    <td class="auto-style37"></td>
                 </tr>
             </table>
             <p>
