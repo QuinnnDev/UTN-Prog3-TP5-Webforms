@@ -27,6 +27,8 @@ namespace TP5_Grupo_8
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
+			mensajeError.Text = string.Empty;
+
 			string consultaSQL = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
             "VALUES ('" + txtNombreSucursal.Text + "','" + txtDescripcion.Text + "'," + ddlProvincia.SelectedValue + ",'" + txtDireccion.Text + "')";
 

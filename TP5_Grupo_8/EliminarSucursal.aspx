@@ -80,7 +80,9 @@
                         <asp:Button ID="btnEliminar" runat="server" Text="Eliminar " OnClick="eliminarSucursal" />
                     </td>
                     <td>
-                        <asp:RegularExpressionValidator ID="revSucursal" runat="server" ControlToValidate="TxtSucursal" ErrorMessage="no se permiten numeros negativos o no enteros" ValidationExpression="^\d{1,}$"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="revSucursal" runat="server" ControlToValidate="TxtSucursal" ErrorMessage="No se permiten numeros negativos o no enteros" ValidationExpression="^\d{1,}$" ForeColor="#CC0000"></asp:RegularExpressionValidator>
+                        <br />
+                        <asp:RequiredFieldValidator ID="rfvIdSucursal" runat="server" ControlToValidate="TxtSucursal" ErrorMessage="Complete el campo" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

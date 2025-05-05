@@ -36,7 +36,7 @@ namespace TP5_Grupo_8
                 msjError.Text = "Debe ingresar un id";
                 return;
             }
-            string ConsultaSQL = "SELECT * FROM Sucursal WHERE Id_Sucursal = '";
+            string ConsultaSQL = "SELECT Id_Sucursal, NombreSucursal, DescripcionSucursal, p.DescripcionProvincia, DireccionSucursal FROM Sucursal s LEFT JOIN Provincia p ON s.Id_ProvinciaSucursal = p.Id_Provincia WHERE Id_Sucursal = '";
 
             ConsultaSQL += txtIdSucursal.Text + "'";
             gvSucursales.DataSource = conexion.EjecutarConsulta(ConsultaSQL);
@@ -55,7 +55,7 @@ namespace TP5_Grupo_8
 
         protected void mostrarTodo(object sender, EventArgs e)
         {
-            ConsultaSQL = "SELECT * FROM Sucursal";
+            ConsultaSQL = "SELECT Id_Sucursal, NombreSucursal, DescripcionSucursal, p.DescripcionProvincia, DireccionSucursal FROM Sucursal s LEFT JOIN Provincia p ON s.Id_ProvinciaSucursal = p.Id_Provincia";
             gvSucursales.DataSource = conexion.EjecutarConsulta(ConsultaSQL);
             gvSucursales.DataBind();
             txtIdSucursal.Text = string.Empty;
