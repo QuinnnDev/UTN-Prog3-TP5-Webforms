@@ -26,8 +26,12 @@ namespace TP5_Grupo_8
 
 			filasAfectadas = conexion.EjecutarTransaccion(consultaSql);
 
-
             TxtSucursal.Text = string.Empty;
+
+			if (filasAfectadas == 0)
+			{
+				msjValidacion.Text = "La ID ingresada no se encuentra en la base de datos.";
+			}
 		}
     }
 }
