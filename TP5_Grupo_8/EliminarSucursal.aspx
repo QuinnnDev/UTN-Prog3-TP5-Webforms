@@ -100,7 +100,9 @@
                     <td class="auto-style6">
                         <asp:Label ID="msjValidacion" runat="server" ForeColor="Red"></asp:Label>
                     </td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style8">
+                        <asp:Label ID="msjError" runat="server" ForeColor="Red"></asp:Label>
+                    </td>
                     <td class="auto-style9">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

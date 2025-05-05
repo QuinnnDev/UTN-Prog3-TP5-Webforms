@@ -23,15 +23,24 @@ namespace TP5_Grupo_8
 		protected void eliminarSucursal(object sender, EventArgs e)
 		{
 			consultaSql = "DELETE FROM Sucursal WHERE Id_Sucursal = " + TxtSucursal.Text;
-
-			filasAfectadas = conexion.EjecutarTransaccion(consultaSql);
-
-            TxtSucursal.Text = string.Empty;
-
-			if (filasAfectadas == 0)
+			try
 			{
-				msjValidacion.Text = "La ID ingresada no se encuentra en la base de datos.";
+                filasAfectadas = conexion.EjecutarTransaccion(consultaSql);
+
+                TxtSucursal.Text = string.Empty;
+
+                if (filasAfectadas == 0)
+                {
+                    msjValidacion.Text = "La ID ingresada no se encuentra en la base de datos.";
+                }
+
+            }
+			catch (Exception)
+			{
+				msjError.Text = "Ocurrió un error al intentar eliminar la sucursal.";
+				throw;
 			}
+			
 		}
     }
 }
