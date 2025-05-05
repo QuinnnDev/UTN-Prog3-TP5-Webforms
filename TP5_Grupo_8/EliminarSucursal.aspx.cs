@@ -22,6 +22,10 @@ namespace TP5_Grupo_8
 
 		protected void eliminarSucursal(object sender, EventArgs e)
 		{
+			msjError.Text = string.Empty;
+			msjSuccess.Text = string.Empty;
+			msjValidacion.Text = string.Empty;
+
 			consultaSql = "DELETE FROM Sucursal WHERE Id_Sucursal = " + TxtSucursal.Text;
 			try
 			{
