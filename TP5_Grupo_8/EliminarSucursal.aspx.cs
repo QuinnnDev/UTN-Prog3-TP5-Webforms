@@ -32,7 +32,10 @@ namespace TP5_Grupo_8
                 if (filasAfectadas == 0)
                 {
                     msjValidacion.Text = "La ID ingresada no se encuentra en la base de datos.";
-                }
+					return;
+				}
+
+				msjSuccess.Text = "Sucursal con id "+TxtSucursal.Text+" ha sido eliminada correctamente";
 
             }
 			catch (Exception)

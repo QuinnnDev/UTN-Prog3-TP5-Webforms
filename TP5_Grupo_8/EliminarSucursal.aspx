@@ -102,6 +102,8 @@
                     </td>
                     <td class="auto-style8">
                         <asp:Label ID="msjError" runat="server" ForeColor="Red"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="msjSuccess" runat="server" ForeColor="#009933"></asp:Label>
                     </td>
                     <td class="auto-style9">&nbsp;</td>
                     <td>&nbsp;</td>
